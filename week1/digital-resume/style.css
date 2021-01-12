@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 24px;
+    color: darkblue;
+    background-color: whitesmoke;
+
+}
+
+img{
+    width: 265px;
+    box-shadow: 5px 5px 13px #3dbacf;    
+    border-radius: 150px;
+}
+
+main{
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: rgb(242, 240, 235);
+    box-shadow: 1px 1px 15px 1px grey;
+    padding: 20px;
+    
+
+}
+
+.cv-pic{
+    display: flex;
+}
+
+h1{
+    font-variant-caps: small-caps;
+    /* justify-content: space-between; */
+    /* background-color: royalblue; */
+    margin: 114px auto;
+    font-size: 2em;
+}
+
+aside{
+    background-color: rgb(61, 186, 207);
+    width: 333px;
+    /* max-width: 100%; */
+    color:  rgb(242, 240, 235);
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+h2{
+    color:  rgb(61, 186, 207);
+    padding: 5px;
+    margin: 20px;
+    margin-top: 40px;
+    display: inline-block;
+    border-bottom: solid 1px rgb(61, 186, 207);
+    font-weight: 100;
+}
+
+h3{
+    padding: 10px;
+    color: darkblue;
+}
+
+h4 {
+    color: #777777;
+    margin-top: 20px;
+}
+
+.profile, .work-experience, .education{
+    padding: 20px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+aside div{
+    /* color: red; */
+    font-size: 0.9em;
+}
+
+.p-details, .languages, .hobbies{
+    margin-top: 55px;
+}
