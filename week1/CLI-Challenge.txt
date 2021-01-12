@@ -1,0 +1,18 @@
+Command Line Interface challenge
+
+1- How do I create a hidden file or folder? How do I display it in the CLI?
+$ touch .hiddenFile.txt
+$ mkdir .hiddenFolder/
+$ ls -a
+
+2- How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+$ mkdir -p these/folders/are/just/for/fun
+
+3- How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+$ echo a new message >> CLI-Challenge.txt
+
+a new message
