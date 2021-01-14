@@ -11,7 +11,7 @@ body{
 }
 
 img{
-    width: 265px;
+    width: 250px;
     box-shadow: 5px 5px 13px #3dbacf;    
     border-radius: 160px;
 }
@@ -75,7 +75,6 @@ h4 {
 }
 
 aside div{
-    /* color: red; */
     font-size: 0.9em;
 }
 
