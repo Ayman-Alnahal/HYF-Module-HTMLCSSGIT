@@ -7,30 +7,24 @@ body{
     font-size: 24px;
     color: darkblue;
     background-color: whitesmoke;
-
 }
-
-img{
-    width: 250px;
-    box-shadow: 5px 5px 13px #3dbacf;    
-    border-radius: 160px;
-}
-
 main{
     display: flex;
-    width: 900px;
+    max-width: 900px;
     max-width: 100%;
     margin: 20px auto;
     background-color: rgb(242, 240, 235);
     box-shadow: 1px 1px 15px 1px grey;
     padding: 20px;
-    
-
-}
+    }
 
 .cv-pic{
     display: flex;
-}
+    width: 250px;
+    max-width: 100%;
+    box-shadow: 5px 5px 13px #3dbacf;    
+    border-radius: 200px;
+    }
 
 h1{
     font-variant-caps: small-caps;
@@ -47,6 +41,9 @@ aside{
     color:  rgb(242, 240, 235);
     font-size: 1.2rem;
     padding: 33px;
+}
+aside div{
+    font-size: 0.9em;
 }
 
 h2{
@@ -74,10 +71,6 @@ h4 {
     box-shadow: 5px 5px 5px grey;
 }
 
-aside div{
-    font-size: 0.9em;
-}
-
 .p-details, .languages, .hobbies{
-    margin-top: 55px;
+    margin-top: 75px;
 }
