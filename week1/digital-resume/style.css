@@ -31,7 +31,7 @@ img{
 
 h1{
     font-variant-caps: small-caps;
-    margin: 114px auto;
+    margin: 115px auto;
     font-size: 2em;
 }
 
@@ -43,6 +43,10 @@ aside{
 }
 aside div{
     font-size: 0.9em;
+}
+
+aside h3{
+    width: 100%;
 }
 
 h2{
