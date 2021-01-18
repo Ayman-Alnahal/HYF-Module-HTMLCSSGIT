@@ -18,29 +18,28 @@ main{
     padding: 20px;
     }
 
+img{
+    width: 265px;
+    box-shadow: 5px 5px 10px #477;    
+    border-radius: 150px;
+}
+
 .cv-pic{
     display: flex;
-    width: 250px;
-    max-width: 100%;
-    box-shadow: 5px 5px 13px #3dbacf;    
-    border-radius: 200px;
     }
+
 
 h1{
     font-variant-caps: small-caps;
-    /* justify-content: space-between; */
-    /* background-color: royalblue; */
     margin: 114px auto;
     font-size: 2em;
 }
 
 aside{
     background-color: rgb(61, 186, 207);
-    flex: 30%;
-    /* max-width: 100%; */
     color:  rgb(242, 240, 235);
     font-size: 1.2rem;
-    padding: 33px;
+    padding: 35px;
 }
 aside div{
     font-size: 0.9em;
