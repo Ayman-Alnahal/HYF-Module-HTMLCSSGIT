@@ -13,7 +13,7 @@
     
     <h2>Homework - week2</h2>
     
-    <a href="https://github.com/Ayman-Alnahal.io/HYF-Module-HTMLCSSGIT/Week2/The-Drones-website"> Digital Resume</a>
+    <a href="https://Ayman-Alnahal.github.io/HYF-Module-HTMLCSSGIT/Week2/The-Drones-website"> The-Drones-website</a>
     
 </body>
 </html>
