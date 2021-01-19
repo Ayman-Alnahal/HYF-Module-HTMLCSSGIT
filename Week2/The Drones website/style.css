@@ -1,0 +1,164 @@
+@font-face{
+    font-family: 'IndieFlower-Regular';
+    src: url(Indie_Flower/IndieFlower-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+    font-family: 'IndieFlower-Regular';
+    font-size: 22px;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    font-size: 2.2em;
+    background-color: teal;
+    color: honeydew;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+    margin: 30px;
+    color: crimson;
+}
+.grid-item{
+    width: 23%;
+    margin: 11px;
+    padding: 20px;
+    float: left;
+    border: 1px solid teal;
+    overflow-y: auto;
+    height: 620px;
+
+}
+
+.grid-item:nth-child(1) {
+    width: 46%;
+    max-width: 100%;
+}
+
+.grid-item:nth-child(1) img{
+    width: 400px;
+    margin: 30px 20% 30px 20%;
+}
+
+img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+section:nth-child(2){
+    clear: both;
+    /* overflow: hidden; */
+    /* margin-bottom: 50px; */
+    /* padding-top: 333px; */
+}
+
+section:nth-child(1){
+    margin-bottom: 33px;
+}
+
+section{
+    margin: 50px 3%;
+
+}
+
+section #grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#grid-flex .grid-item:nth-child(1){
+    flex: 45%;
+}
+
+section #grid-flex li{
+    flex: 20%;
+}
+
+h2{
+    display: flexbox;
+}
+
+@media (max-width:1024px){
+    body{
+        font-size: 20px;
+    }
+
+    .grid-item{
+        width: 30%;
+        height: 450px;
+    }
+
+    .grid-item:nth-child(-n+2) {
+        width: 46%;
+        max-width: 100%;
+    }
+
+    img{
+        width: 250px;
+    }
+
+    .grid-item:nth-child(-n+2) img{
+        width: 350px;
+        margin: 20px 1%;
+    }
+    #grid-flex .grid-item:nth-child(-n+2){
+        flex: 45%;
+    }
+    section #grid-flex li{
+        flex: 30%;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px){
+    body{
+        font-size: 16px;
+    }
+
+    .grid-item{
+        width: 60%;
+        height: 350px;
+        /* max-width: 100%; */
+    }
+
+    .grid-item:nth-child(-n+2) {
+        width: 60%;
+        max-width: 100%;
+    }
+
+    img{
+        width: 550px;
+        max-width: 100%;
+    }
+
+    /* .grid-item:nth-child(-n+2) img{
+        width: 350px;
+        margin: 20px 1%;
+    } */
+    #grid-flex .grid-item:nth-child(-n+2){
+        flex: 60%;
+    }
+    section #grid-flex li{
+        flex: 60%;
+        max-width: 100%;
+    }
+}
