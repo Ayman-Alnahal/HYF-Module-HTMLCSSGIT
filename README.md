@@ -10,6 +10,7 @@
     <br>
     <a href="https://Ayman-Alnahal.github.io/HYF-Module-HTMLCSSGIT/week1/digital-resume"> Digital Resume</a>
     <br>
+    <h2>Homework - week2</h2>
     <a href="https://Ayman-Alnahal.github.io/HYF-Module-HTMLCSSGIT/Week2/The-Drones-website"> The-Drones-website</a>
     
 </body>
