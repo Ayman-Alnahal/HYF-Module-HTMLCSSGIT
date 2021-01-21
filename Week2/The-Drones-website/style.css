@@ -9,14 +9,13 @@
 }
 
 body{
-    /* background-color: honeydew; */
     font-family: 'IndieFlower-Regular';
     font-size: 20px;
     background-image: url(https://c4.wallpaperflare.com/wallpaper/806/259/793/aerial-air-aircraft-camera-wallpaper-preview.jpg);
     max-width: 100%;
     background-size: contain;
     contain: content;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 
 li{
@@ -25,7 +24,7 @@ li{
 
 header{
     font-size: 2.2em;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 139, 0.8);
     color: honeydew;
 }
 
@@ -36,17 +35,41 @@ h2{
     font-size: 2em;
     margin: 30px;
     color: crimson;
+    display: flexbox;
+    background-color: rgb(245, 222, 179, 0.5);
+    text-align: center;
+}
+
+h3{
+    width: 100%;
+    font-size: 1em;
+}
+
+#grid-floats{
+    justify-content: space-between;
+    margin: auto;
 }
 .grid-item{
     width: 23%;
     margin: 10px;
     padding: 20px;
     float: left;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     overflow-y: auto;
     height: 620px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1em;
+    text-align: center;
+    cursor: cell;
+    transition: 1s;
+    box-shadow: 2px 2px 10px skyblue;
+}
+
+.grid-item:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    /* font-size: 1.1em; */
+    font-weight: bold;
+    box-shadow: 3px 3px 10px #777;
 }
 
 .grid-item:nth-child(1) {
@@ -69,21 +92,23 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    transition: 1s ease-in;
+}
+img:hover{
+    /* transform: rotateX(360deg); */
+    transform: rotateY(360deg);
 }
 
-
-section:nth-child(2){
-    clear: both;
+section{
+    margin: 50px 3%;
 }
 
 section:nth-child(1){
     margin-bottom: 35px;
 }
 
-section{
-    margin: 50px 3%;
-
+section:nth-child(2){
+    clear: both;
 }
 
 section #grid-flex{
@@ -98,10 +123,6 @@ section #grid-flex{
 
 section #grid-flex li{
     flex: 20%;
-}
-
-h2{
-    display: flexbox;
 }
 
 @media (max-width:1024px){
@@ -133,11 +154,7 @@ h2{
     section #grid-flex li{
         flex: 30%;
     }
-
 }
-
-
-
 
 @media (max-width: 600px){
     body{
@@ -160,10 +177,6 @@ h2{
         max-width: 100%;
     }
 
-    /* .grid-item:nth-child(-n+2) img{
-        width: 350px;
-        margin: 20px 1%;
-    } */
     #grid-flex .grid-item:nth-child(-n+2){
         flex: 60%;
     }
