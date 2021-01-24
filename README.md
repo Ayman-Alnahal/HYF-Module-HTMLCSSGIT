@@ -12,6 +12,8 @@
     <br>
     <h2>Homework - week2</h2>
     <a href="https://Ayman-Alnahal.github.io/HYF-Module-HTMLCSSGIT/Week2/The-Drones-website"> The-Drones-website</a>
-    
+    <br>
+    <h2>Homework - week3</h2>
+    <a https://github.com/Ayman-Alnahal/Animals>
 </body>
 </html>
