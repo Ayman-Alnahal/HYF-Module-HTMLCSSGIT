@@ -11,11 +11,11 @@
 body{
     font-family: 'IndieFlower-Regular';
     font-size: 20px;
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/806/259/793/aerial-air-aircraft-camera-wallpaper-preview.jpg);
+    background-image: url(/images/drones.jpg);
     max-width: 100%;
     background-size: contain;
     contain: content;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 }
 
 li{
@@ -24,7 +24,7 @@ li{
 
 header{
     font-size: 2.2em;
-    background-color: rgb(0, 0, 139, 0.8);
+    background-color: rgb(119, 119, 119, 0.4);
     color: honeydew;
 }
 
@@ -35,10 +35,15 @@ h2{
     font-size: 2em;
     margin: 30px;
     color: crimson;
-    display: flexbox;
+    /* display: flexbox; */
     background-color: rgb(245, 222, 179, 0.5);
     text-align: center;
+    overflow: hidden;
 }
+
+/* h2:hover {
+    width: 300px;
+} */
 
 h3{
     width: 100%;
@@ -50,13 +55,13 @@ h3{
     margin: auto;
 }
 .grid-item{
-    width: 23%;
+    width: 22%;
     margin: 10px;
     padding: 20px;
     float: left;
     /* border: 1px solid teal; */
     overflow-y: auto;
-    height: 620px;
+    height: 650px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1em;
     text-align: center;
@@ -78,21 +83,24 @@ h3{
 }
 
 .grid-item:nth-child(1) img{
-    width: 500px;
+    width: 400px;
     /* margin: 30px 20% 30px 20%; */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 10px auto;
 }
 
 img{
-    width: 500px;
+    width: 400px;
     max-width: 100%;
     /* height: auto; */
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 1s ease-in;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 10px auto;
+
+    transition: 0.6s;
 }
 img:hover{
     /* transform: rotateX(360deg); */
@@ -125,6 +133,7 @@ section #grid-flex li{
     flex: 20%;
 }
 
+
 @media (max-width:1024px){
     body{
         font-size: 20px;
@@ -132,7 +141,7 @@ section #grid-flex li{
 
     .grid-item{
         width: 30%;
-        height: 450px;
+        height: 520px;
     }
 
     .grid-item:nth-child(-n+2) {
@@ -156,14 +165,14 @@ section #grid-flex li{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
     body{
         font-size: 16px;
     }
 
     .grid-item{
         width: 95%;
-        height: 450px;
+        height: 490px;
         /* max-width: 100%; */
     }
 
