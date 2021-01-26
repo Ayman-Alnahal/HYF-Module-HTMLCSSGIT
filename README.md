@@ -15,5 +15,7 @@
     <br>
     <h2>Homework - week3</h2>
     <a href="https://github.com/Ayman-Alnahal/Animals">GIT exercises/Animals<a>
+    <br>
+    <a href="https://Ayman-Alnahal.github.io/HYF-Module-HTMLCSSGIT/Week3/Goodreads-clone"> Goodreads-clone</a>
 </body>
 </html>
