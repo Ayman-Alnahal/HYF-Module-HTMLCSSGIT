@@ -5,12 +5,10 @@
 }
 
 header{
-    background-image: url(/Assests/desktop-background@2x.png);
+    background-image: url(Assests/desktop-background@2x.png);
     background-size: cover;
     background-position: center;
     height: 300px;
-    /* max-width: 1200px; */
-
     width: 100%;
     /* background-repeat: repeat-x; */
     position: relative;
@@ -18,7 +16,7 @@ header{
 
 nav{
     background-color: #f4f2e9 !important;
-    height: 65px;
+    height: 75px;
     justify-content: space-around;
 }
 
@@ -28,7 +26,7 @@ nav ul{
     list-style: none;
 }
 .logo{
-    margin-left: 20%;
+    margin-left: 17%;
 }
 
 .email{
@@ -36,24 +34,29 @@ nav ul{
 }
 .password{
     margin-right: 50px;
+    margin-left: 30px;
 }
 
 .email,.password{
-width: 120px;
-padding: 10px;
+width: 110px;
     /* background-color: white; */
     font-size: 13px;
-    /* margin: 2px; */
 }
-nav ul li {
+
+.email input,.password input{
+/* height: 18px; */
+padding: 5px;
+
+}
+nav ul li{
     margin: 13px;
     /* justify-content: center; */
 }
 
 .sign-in-btn{
-    margin-right: 21%;
-    /* background-color: #382110; */
+    margin-right: 18%;
 }
+
 .sign-in-btn button{
     background-color: #382110;
     color: white;
@@ -74,6 +77,22 @@ nav ul li {
     margin: 0px 8px 0 0;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     padding: 12px;
+    font-size: 12px;
+}
+
+.sign-up input{
+    margin: 0.3em;
+    width: 260px;
+    height: 32px;
+}
+
+.sign-up button{
+    background-color: #382110;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 3px;
 }
 
 .caption{
@@ -92,10 +111,7 @@ nav ul li {
 } 
 
 .columns{
-    /* column-count: 2; */
     display: flex;
-    /* flex-direction: column; */
-    /* background-color: rgb(147, 180, 169); */
     margin-right: auto;
     color: #00635D;
     text-decoration: none;
@@ -103,6 +119,7 @@ nav ul li {
     cursor: pointer;
     padding: 0 24px;
 }
+
 .annual-awards{
 color: #181818;
 background-color: #f4f1ea;
@@ -111,6 +128,7 @@ padding: 32px 16px 20px 16px;
 text-align: center;
 line-height: 2em;
 }
+
 .columns ul{
     list-style: none;
     text-decoration: none;
@@ -150,9 +168,10 @@ main{
     background-color: #ffd767;
     border: 1px solid #ffd767;
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 3px;
     padding: 12px 24px;
+    margin: 20px;
 }
 
 main aside{
@@ -164,6 +183,5 @@ main aside{
 }
 
 aside img{
-    /* width: 250px; */
     width: 100%;
 }
