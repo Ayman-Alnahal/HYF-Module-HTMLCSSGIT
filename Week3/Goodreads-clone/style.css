@@ -5,7 +5,7 @@
 }
 
 header{
-    background-image: url(Assests/desktop-background@2x.png);
+    background-image: url(/Assests/desktop-background@2x.png);
     background-size: cover;
     background-position: center;
     height: 300px;
