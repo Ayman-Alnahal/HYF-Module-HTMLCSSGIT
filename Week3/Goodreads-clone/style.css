@@ -5,7 +5,7 @@
 }
 
 header{
-    background-image: url(Assests/desktop-background@2x.png);
+    background-image: url(/Assests/desktop-background@2x.png);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -138,15 +138,15 @@ line-height: 2em;
     text-decoration: none;
 }
 
-.first-column{
+.first-column, .second-column{
     flex: 1;
     text-align: left;
 }
 
-.second-column{
+/* .second-column{
     flex: 1;
     text-align: left;
-}
+} */
 
 main{
     width: 1000px;
@@ -174,14 +174,126 @@ main{
     margin: 20px;
 }
 
+.search-box{
+    /* flex-wrap: wrap; */
+    background-color: aquamarine;
+    flex-direction: column;
+}
+
 main aside{
     line-height: 2em;
     display: block;
-    display: flex;
+    /* display: flex; */
     padding: 15px;
     width: 30%;
 }
 
 aside img{
     width: 100%;
+}
+
+h5{
+    font-opacity
+}
+
+aside .author-program{
+    margin: 24px 0;
+}
+
+.contact-app{
+    display: flex;
+    /* flex: 30%; */
+    justify-self: flex-end;
+}
+
+.contact-app a{
+    padding: 0 10px
+}
+
+.contact-app img{
+    width: 128px;
+    height: 100%;
+    display: block;
+}
+
+.ft-social-list{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    background: #f9f8f4;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    /* display: flex; */
+}
+
+footer a {
+    text-decoration: none;
+    color: #a2a19f;
+}
+
+.section1, .section2{
+    display: flex;
+    flex-grow: 1;
+}
+.section2{
+    justify-content: flex-end;
+}
+
+.section1 .company{
+    flex-basis: 33.3333%;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+}
+.section1 .work{
+    flex-basis: 33.3333%;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+}
+
+.section1 .ft-social{
+    flex-basis: 33.3333%;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+}
+
+.sign-using{
+    position: absolute;
+    bottom: 0;
+    /* right: 0; */
+    width: 273px;
+    height: 42px;
+    margin: 0 18px 0 0;
+    vertical-align: middle;
+    text-align: center;
+    padding: 9px 5px;
+    background: #c4a6a6;
+    border-radius: 4px 4px 0 0;
+    display: inline-block;
+
+}
+
+.sign-using img{
+    width: 24px;
+    vertical-align: center;
+    margin: auto 1px;
+}
+
+.sign-using span{
+    vertical-align: 18px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sign-using ul{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: 0.7em;
+}
+
+.sign-using ul li {
+    display: inline-block;
+    
 }
