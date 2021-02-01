@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <title>GoodReads</title>
 <style>
      
@@ -69,6 +70,30 @@
             </p>
             
         </form>
+        <div class="sign-using">
+            <span>
+            or sign in using
+            </span>
+            <ul>
+            <li>
+            <a class="fbjsLogin" data-redirect="/" href="#">
+            <img class="thirdPartyLink__icon" alt="Sign in with Facebook" title="Sign in with your Facebook account" src="https://s.gr-assets.com/assets/gr/share_module/share_facebook_circle-ecf94fc18c887e845025d979d27f758d.svg">
+            </a>
+            </li>
+            <li class="thirdPartyLink">
+            <a href="#" onclick="GR_Twitter.askToConnect(); return false;"><img class="thirdPartyLink__icon" alt="Sign in with Twitter" title="Sign in with your Twitter account" src="https://s.gr-assets.com/assets/gr/share_module/share_twitter_circle-1e3cc199af6bf2bd798502acf873657a.svg"></a>
+            </li>
+            <li class="thirdPartyLink">
+            <a href="/google_accounts/sign_in"><img class="thirdPartyLink__icon" alt="Sign in with Google" title="Sign in with your Google account" src="https://s.gr-assets.com/assets/gr/third_party/google_circle-694153be668f0720f058e755b6f136c6.png"></a>
+            </li>
+            <li class="thirdPartyLink">
+            <a href="#" onclick="GR_Amazon.askToConnect('https://www.goodreads.com/amazon/login/redirect_to_amazon_login_url'); return false;"><img class="thirdPartyLink__icon" alt="Sign in with Amazon" title="Sign in with your Amazon account" src="https://s.gr-assets.com/assets/gr/third_party/amazon_circle-5596868f0d928f2945f3374b01f5e10b.png"></a>
+            </li>
+            <li class="thirdPartyLink">
+            <a href="#" onclick="GR_Apple.login(); return false;"><img class="thirdPartyLink__icon" alt="Sign in with Apple" title="Sign in with your Apple account" src="https://s.gr-assets.com/assets/gr/share_module/share_apple_circle-f5bc082e9664486c404fe34b8e212378.svg"></a>
+            </li>
+            </ul>
+            </div>
     </section>
         
             <div class="caption">
@@ -101,6 +126,8 @@
         </ul>
     </div>
     </section>
+
+    
     <aside>
         <section class="news">
             <h3>News & Interviews</h3>
@@ -110,8 +137,82 @@
             <h5>5 likes. 1 comment</h5>
 
         </section>
+
+        <section class="author-program">
+            <h2>Are you an author or a publisher?</h2>
+            <p>
+                Gain access to a massive audience of book lovers.
+            </p>
+            <button>Author program</button>
+            <button>Advertise</button>
+        </section>
     </aside>
 </main>
+
+<div class="browse-books">
+    <h2>Search and browse books</h2>
+    <input type="text" placeholder="Title / Author / ISBN">
+    <ul class="types">
+        <li><a href="">Art</a></li>
+        <li><a href="">Biography</a></li>
+        <li><a href="">Business</a></li>
+        <li><a href="">Children's</a></li>
+        <li><a href="">Christian</a></li>
+        <li><a href="">comics</a></li>
+        <li><a href="">Cookbooks</a></li>
+        <li><a href="">Ebooks</a></li>
+        <li><a href="">Fantasy</a></li>
+        <li><a href="">Fiction</a></li>
+        <li><a href="">Graphic Novels</a></li>
+    </ul>
+</div>
+
+<footer>
+    <div class="columns">
+        <section class="section1">
+            <div class="company">
+                <h3>Company</h3>
+                <ul class="first-column">
+                <li><a href="">About us</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Interest Based Ads</a></li>
+                <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="work">
+                <h3>Work with us</h3>
+                <ul class="second-column">
+                    <li><a href="">Authors</a></li>
+                    <li><a href="">Advertise </a></li>
+                    <li><a href="">Authors & ads blog</a></li>
+                    <li><a href="">API</a></li>
+                </ul>
+            </div>
+
+            <section class="ft-social">
+                <ul class="ft-social-list">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+    </section>
+</section>
+
+        <section class="section2">
+            <div class="contact-app">
+                <a href="#"> <img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-google-4d63c31a3e.svg" alt="" /></a>
+                <a href="#"> <img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-apple-f1f919205b.svg" alt="" /></a>
+            </div>
+    </section>
+    </div>
+    
+    
+
+    
+</footer>
 
 </body>
 </html>
