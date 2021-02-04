@@ -4,20 +4,17 @@
     box-sizing: border-box;
 }
 
-header{
-    background-image: url(Assests/desktop-background@2x.png);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+body{
+    font-size: 14px;
+    max-width: 100%;
     width: 100%;
-    /* background-repeat: repeat-x; */
-    position: relative;
 }
 
 nav{
-    background-color: #f4f2e9 !important;
+    background-color: #f4f2e9;
     height: 75px;
     justify-content: space-around;
+    /* width: 100%; */
 }
 
 nav ul{
@@ -39,12 +36,10 @@ nav ul{
 
 .email,.password{
 width: 110px;
-    /* background-color: white; */
     font-size: 13px;
 }
 
 .email input,.password input{
-/* height: 18px; */
 padding: 5px;
 
 }
@@ -65,14 +60,24 @@ nav ul li{
     border-radius: 3px;
 }
 
+header{
+    background-image: url(Assests/desktop-background@2x.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    /* background-repeat: repeat-x; */
+    position: relative;
+}
+
+
 .sign-up{
     background-color: #F4F1EA;
     border-top: 1px solid #D8D8D8;
     height: 300px;
     width: 295px;
     position: absolute;
-    right: 18%;
-    /* width: 280px; */
+    right: 8%;
     margin: 0px 8px 0 0;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     padding: 12px;
@@ -141,6 +146,7 @@ nav ul li{
 
 main{
     width: 1000px;
+    max-width: 100%;
     margin: 15px auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 14px;
@@ -168,7 +174,7 @@ text-align: center;
 line-height: 2em;
 }
 
-.first-column, .second-column{
+.column{
     flex: 1;
     text-align: left;
 }
@@ -178,7 +184,7 @@ line-height: 2em;
     text-decoration: none;
 }
 
-.first-column li a, .second-column li a{
+.column li a{
     text-decoration: none;
 }
 
@@ -216,7 +222,7 @@ line-height: 2em;
     margin: 12px 0;
 }
 
-.types{
+.book-types{
     display: flex;
     color: #333333;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
@@ -224,14 +230,14 @@ line-height: 2em;
     line-height: 18px;
 }
 
-.types ul{
+.book-types ul{
     flex: 0 0 24%;
     list-style: none;
     list-style-type: none;
     text-decoration: none;
 }
 
-.types ul li a{
+.book-types ul li a{
     flex: 0 0 24%;
     text-decoration: none;
 }
@@ -239,10 +245,8 @@ line-height: 2em;
 main aside{
     line-height: 2em;
     display: block;
-    /* display: flex; */
     padding: 15px;
     width: 30%;
-    /* flex-basis: 25%; */
 }
 
 aside img{
@@ -290,7 +294,6 @@ aside .author-program button{
 .ft-social-list{
     display: flex;
     justify-content: center;
-
 }
 
 .ft-social {
@@ -311,6 +314,10 @@ footer{
     background: #f9f8f4;
     padding-bottom: 32px;
     padding-top: 32px;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
@@ -324,9 +331,6 @@ footer .section1, .section2{
     justify-content: center;
 }
 
-.section2{
-    /* justify-content: center; */
-}
 
 .section1 .company{
     flex-basis: 33.3333%;
@@ -335,18 +339,202 @@ footer .section1, .section2{
 }
 .section1 .work{
     flex-basis: 33.3333%;
-    /* flex-grow: 1; */
     flex-shrink: 0;
 }
 
 .section1 .ft-social{
     flex-basis: 33.3333%;
-    /* flex-grow: 1; */
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 999px){
-    .sign-up{
-        right: 1%;
+@media (max-width: 474px){
+    .logo{
+        margin-left: 1%;
+        
     }
-} 
+    .logo img{
+        width: 100px;
+    }
+    
+    .email{
+        margin-left: 5px;
+    }
+    
+    .email,.password{
+        width: 10px;
+        font-size: 10px;
+    }
+    
+    .email input,.password input{
+    padding: 5px;
+    font-size: 10px;
+    
+    }
+    nav ul li{
+        margin: 13px;
+    }
+    
+    .sign-in-btn{
+        margin-right: 1%;
+    }
+    
+    .sign-in-btn button{
+        
+        padding: 6px 9px;
+        /* border-radius: 3px; */
+    }
+
+    .caption{
+        display: none;
+    }
+
+    .sign-up{
+    height: 300px;
+    width: 320px;
+    position: relative;
+    right: 0px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 12px;
+}
+
+    footer .section1{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .app-links img{
+        width: 90px;
+    }
+
+    .main{
+        display: block;
+    }
+
+    main aside{
+        display: block;
+        width: 100%;
+    }
+    
+    aside .author-program{
+        text-align: center;
+    }
+    
+    aside .author-program p{
+        margin: 20px auto;
+        line-height: 12px;
+    }
+    
+    aside .author-program button{
+        font-size: 14px;
+        padding: 7px 14px;
+        margin: 2px 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1100px){
+}
+
+@media (min-width: 474px) and (max-width: 768px){
+    .sign-up{
+        right: 2%;
+    }
+    
+    .logo{
+        margin-left: 2%;
+    }
+    
+    .email,.password{
+        font-size: 11px;
+    }
+    
+    .email input,.password input{
+    padding: 5px;
+    /* width: 100px; */
+    }
+
+    nav ul li{
+        margin: 13px;
+    }
+    
+    .sign-in-btn{
+        margin-right: 2%;
+    }
+    
+    .sign-in-btn button{
+        padding: 6px 12px;
+    }
+    .sign-up{
+        right: 2%;
+        height: 200px;
+        width: 220px;
+        position: absolute;
+        padding: 12px;
+        font-size: 10px;
+    }
+
+    .sign-up h2{
+        font-size: 1.1em;
+    }
+
+    header{
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        width: 100%;
+        position: relative;
+    }
+    
+.sign-up input{
+    margin: 0.2em auto;
+    width: 190px;
+    height: 20px;
+    font-size: 0.9em;
+}
+
+.sign-up button{
+    padding: 5px 8px;
+    font-size: 1em;
+}
+
+.sign-using{
+    width: 200px;
+    height: 33px;
+    margin: 0 18px 0 0;
+    vertical-align: middle;
+}
+
+.sign-using img{
+    width: 14px;
+    vertical-align: 11px;
+    /* margin-top: 1px; */
+}
+
+.sign-using span{
+    vertical-align: 18px;
+    font-size: 10px;
+    margin-left: -10px;
+}
+
+.sign-using ul{
+    vertical-align: 0.2em;
+}
+
+.caption{
+    bottom: 20px;
+    left: 20%;
+    font-size: 12px;
+}
+aside .author-program h2{
+    font-size: 0.8em;
+}
+
+aside .author-program p{
+    font-size: 0.8em;
+}
+
+.news a p{
+    font-size: 0.7em;
+}
+
+}
